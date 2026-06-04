@@ -609,7 +609,7 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index2.html">Batik Nusantara</a>
+              <a class="nav-link" href="index1.html">Halaman Selanjutnya</a>
             </li>
           </ul>
         </div>
@@ -625,7 +625,7 @@
           <h1 class="display-4">MUHAMMAD BAIHAQQI</h1>
           <p class="lead">Siswa Xl-PPLG 1 | SMKN 5 Malang</p>
           <a
-            href="https://github.com/haqqi75"
+            href="https://baihaqqi7312.github.io/"
             target="_blank"
             class="btn btn-warning btn-lg"
             >Follow my GitHub <i class="bi bi-github"></i
@@ -788,11 +788,11 @@
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="project-card">
+            <div class="project-card clickable" id="project2-card">
               <img src="img/CODING.gif" class="project-card-img" alt="Project 2">
               <div class="project-card-body">
                 <h3 class="project-card-title">Project 2</h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Website Jurusan.</p>
               </div>
             </div>
           </div>
@@ -1100,6 +1100,14 @@
       const project1Card = document.getElementById('project1-card');
       const batiModal = document.getElementById('batiModal');
       const closeModal = document.getElementById('closeModal');
+
+      // Project 2 - navigate to website-with-admin
+      const project2Card = document.getElementById('project2-card');
+      if (project2Card) {
+        project2Card.addEventListener('click', function() {
+          window.location.href = 'website-with-admin/website/Index.html';
+        });
+      }
 
       // Open modal when Project 1 is clicked
       project1Card.addEventListener('click', function() {
